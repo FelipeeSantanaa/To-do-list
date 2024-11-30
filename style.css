@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body{
+    background-color: peru;
+}
+
+.container{
+    width: 500px;
+    background-color: antiquewhite;
+    padding: 20px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+}
+
+.input-tarefa{
+    border: none;
+    border-radius: 5px;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+}
+.input-tarefa:hover{
+    font-weight: bold;
+}
+
+.adicionar{
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: darkcyan;
+    color: white;
+    font-size: 15px;
+    padding: 0 15px;
+    float: right;
+    cursor: pointer;
+}
+.adicionar:hover{
+    opacity: 0.8;
+}
+.adicionar:active{
+    opacity: 0.6;
+}
+
+img{
+    height: 25px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.tarefas:hover img {
+    opacity: 1;
+}
+
+.lista{
+    width: 100%;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.tarefas{
+    margin-bottom: 20px;
+    margin-top: 20px;
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.2);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-color: aliceblue;
+    border-radius: 5px;
+
+}
+
+.done{
+    background-color: rgb(195, 253, 109);
+    text-decoration: line-through;
+}
